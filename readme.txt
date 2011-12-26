@@ -12,7 +12,7 @@ git clone git://github.com/disabler/isida.git isida
 1. rename defaul_config.py to config.py and fill look inside
 2. create startup databases with "python create_databases.py" command
 3. indexate databases "python indexate_databases.py"
-4. type in console: sh launch.sh for launch
+4. type in console: "sh launch.sh &" for launch
 
 - update -
 
