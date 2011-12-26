@@ -21,7 +21,7 @@ after global bot update - launch "sh update" script for correct update.
 
 - fast install and launch -
 
-svn co svn://isida-bot.com/svn/trunk isida or git clone git://github.com/disabler/isida.git isida
+svn co svn://isida-bot.com/svn/trunk isida OR git clone git://github.com/disabler/isida.git isida
 cd isida/settings
 cp demo_config.py config.py
 nano config.py
