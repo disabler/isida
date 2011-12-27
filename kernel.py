@@ -511,7 +511,7 @@ def paste_text(text,room,jid):
 def nice_time(ttim):
 	gt=tuple(time.gmtime())
 	lt=tuple(time.localtime(ttim))
-	timeofset = int(time.mktime(lt[:5]+(0,0,0,0))-time.mktime(gt[:5]+(0,0,0,0)))/3600
+	timeofset = int(round(int(time.mktime(lt[:5]+(0,0,0,0))-time.mktime(gt[:5]+(0,0,0,0)))/3600.0))
 	if timeofset < 0: t_gmt = 'GMT%s' % timeofset
 	else: t_gmt = 'GMT+%s' % timeofset
 	gt=timeZero(gt)
