@@ -1184,6 +1184,8 @@ Muc-filter. Timeout for repeat message	Muc-filter. Таймаут повтора
 Paste. Paste as html. Otherwize as text	Paste. Html размещение, иначе в виде текста
 City. Yandex.Map API-key	City. Yandex.Map API-ключ
 Bing. Translator API-key	Bing. Api-ключ переводчика
+NewYear. Congratulations text	NewYear. Текст поздравления с Новым годом
+Happy New Year!	С Новым годом!
 Kernel. Text for hide censore	Kernel. Текст для закрытия мата
 Kernel. Time of ignore for anti-ddos	Kernel. Время игнора при ddos'е в зависимости от уровня доступа
 Kernel. Anti-ddos time delay between messages	Kernel. Промежуток между сообщениями для включения анти-ddos
