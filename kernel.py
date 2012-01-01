@@ -1224,12 +1224,12 @@ def iqCB(sess,iq):
 									else: msg = muc_filter_action(act,jid,room,L('Blocked by raw censor!'))
 
 							# Large message filter
-							if get_config(gr,'muc_filter_large') != 'off' and len(esc_min(body)) > GT('muc_filter_large_message_size') and msg and not mute:
+							if get_config(gr,'muc_filter_large') != 'off' and len(body) > GT('muc_filter_large_message_size') and msg and not mute:
 								act = get_config(gr,'muc_filter_large')
 								pprint('MUC-Filter msg large message (%s): %s [%s] %s' % (act,jid,room,body),'brown')
 								if act == 'paste' or act == 'truncate':
 									url = paste_text(rss_replace(body),room,jid)
-									if act == 'truncate': body = u'%s[…] %s' % (esc_min(body)[:GT('muc_filter_large_message_size')],url)
+									if act == 'truncate': body = u'%s[…] %s' % (body[:GT('muc_filter_large_message_size')],url)
 									else: body = L('Large message%s %s') % (u'…',url)
 									msg = msg.replace(get_tag_full(msg,'body'),'<body>%s</body>' % body)
 								elif act == 'mute': mute = True
