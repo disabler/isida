@@ -501,7 +501,7 @@ Google Calculator	Калькулятор google
 Definition for a word or phrase.\ndefine word - random define of word or phrase\ndefine N word - N-th define of word or phrase\ndefine a-b word - from a to b defines of word or phrase	Определение слова или фразы.\ndefine слово - случайное определение\ndefine N слово - N-нное определение\ndefine a-b слово - определения слова с номера a до b
 Google URL Shortener/Unshortener	Сервис сокращения ссылок от Google
 Google QR-code generator	Сервис генерации QR-кодов от Google
-Google Dictionary\ngdict from_language to_language word	Словарь Google\ngdict с_языка на_язык слово
+Google Dictionary\ngdict [from_language] to_language word	Словарь Google\ngdict [с_языка] на_язык слово
 
 # file: ../trunk/plugins/hideroom.py
 This command available only in private!	Команда доступна только в привате!

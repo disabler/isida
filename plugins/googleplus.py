@@ -75,19 +75,16 @@ def define_message(room, jid, nick, type, text):
 
 def gdict(type, jid, nick, text):
 	text = reduce_spaces_all(text.encode('utf-8')).split(' ')
-	if len(text) == 3:
-		sl, tl, text = text[0], text[1], ' '.join(text[2:])
+	if 2 <= len(text) <= 3:
+		try: sl, tl, text = text
+		except: sl, tl, text = [''] + text
 		data = html_encode(load_page('http://translate.google.ru/translate_a/t?', {'client': 'x', 'text': text, 'hl': 'en', 'sl': sl, 'tl': tl}))
 		try:
 			data = json.loads(data)
-			if 'dict' in data:
-				msg = '\n' + '\n'.join(['%s: %s' % (L(i['pos']).upper(), ', '.join(i['terms'])) for i in data['dict'] if i['pos']])
-			else:
-				msg = L('I can\'t translate it!')
-		except:
-			msg = L('Command execution error.')
-	else:
-		msg = L('Error in parameters. Read the help about command.')
+			if 'dict' in data: msg = '\n%s' % '\n'.join(['%s: %s' % (L(i['pos']).upper(), ', '.join(i['terms'])) for i in data['dict'] if i['pos']])
+			else: msg = L('I can\'t translate it!')
+		except: msg = L('Command execution error.')
+	else: msg = L('Error in parameters. Read the help about command.')
 	send_msg(type, jid, nick, msg)
 
 def goo_gl_raw(text, is_qr):
@@ -121,4 +118,4 @@ execute = [(3, 'gcalc', gcalc, 2, L('Google Calculator')),
 	(3, 'define', define, 2, L('Definition for a word or phrase.\ndefine word - random define of word or phrase\ndefine N word - N-th define of word or phrase\ndefine a-b word - from a to b defines of word or phrase')),
 	(3, 'ggl', goo_gl, 2, L('Google URL Shortener/Unshortener')),
 	(3, 'qr', goo_gl_qr, 2, L('Google QR-code generator')),
-	(3, 'gdict', gdict, 2, L('Google Dictionary\ngdict from_language to_language word'))]
+	(3, 'gdict', gdict, 2, L('Google Dictionary\ngdict [from_language] to_language word'))]
