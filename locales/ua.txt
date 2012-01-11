@@ -486,12 +486,22 @@ Search XEP	Пошук XEP
 Search in en.wikipedia.org	Пошук по ru.wikipedia.org
 
 # file: ../trunk/plugins/googleplus.py
+verb	дієслово
+noun	іменник
+preposition	прийменник
+adverb	прислівник
+adjective	прикметник
+phrase	вислів
+conjunction	сполучник
+abbreviation	абревіатура
 Google Calculator results not found	Калькулятор google не може це підрахувати!
 I don't know!	Хм. Мені про це ніхто не розповідав...
+Command execution error.	Помилка виконання команди.
 Google Calculator	Калькулятор google
 Definition for a word or phrase.\ndefine word - random define of word or phrase\ndefine N word - N-th define of word or phrase\ndefine a-b word - from a to b defines of word or phrase	Визначення для слова чи виразу.\ndefine слово - випадкове визначення слова чи виразу\ndefine N слово - N-нне визначення слова чи виразу\ndefine a-b word - визначення слова чи фрази з номеру a і до b
 Google URL Shortener/Unshortener	Сервіс скорочення посиланнь від Google
 Google QR-code generator	Сервіс генерації QR-кодів від Google
+Google Dictionary\ngdict from_language to_language word	Словник Google\ngdict з_мови на_мову слово
 
 # file: ../trunk/plugins/hideroom.py
 This command available only in private!	Команда доступна лише в приваті!
@@ -803,7 +813,6 @@ Locale not found!	Локалізація не знайдена!
 Locale set to: en	Встановлена локалізація: en
 Current locale: %s	Поточна локалізація: %s
 Command temporary blocked!	Команда тимчасово блокована
-Command execution error.	Помилка виконання команди.
 ok	ок
 Enabled: %s	Увімкнено: %s
 Only conference owner can enable commands!	Ввімкнення команд доступне лише власнику конференції!
