@@ -254,7 +254,6 @@ Total: %s	Всего: %s
 "%s" not found	"%s" не найдено
 Not found.	Не найдено.
 Total: %s%s	Всего: %s%s
-I can't do it	Не получается...
 This command in use somewhere else. Please try later.	Эта команда используется в другом месте. Пожалуйста, попробуйте позже.
 Please wait. Result you will be receive in private message approximately %s %s	Ожидайте, результат Вы получите в приват примерно через %s %s
 sec.	сек.
@@ -593,6 +592,7 @@ Name	Имя
 About	О себе
 URL	Ссылка
 Uptime: %s	Аптайм: %s
+I can't do it	Не получается...
 Remote server not found	Удалённый сервер не найден
 Ping from you %s sec.	Пинг от тебя %s сек.
 Ping from %s %s sec.	Пинг от %s %s сек.
@@ -687,6 +687,7 @@ Show user's nick changes.	Показ смены ников.
 Last track %s: %s - %s %s	Последняя дорожка %s: %s - %s %s
 Unavailable!	Недоступно!
 Last tracks %s:	Последние дорожки %s:
+Friends %s:	Друзья %s:
 Loved tracks %s:	Любимые треки %s:
 Neighbours %s:	Соседи %s:
 Playlists %s:	Плейлисты %s:
@@ -713,7 +714,6 @@ Music tastes	Музыкальная совместимость
 
 # file: ../trunk/plugins/logger.py
 Users: %s (%s)	Пользователи: %s (%s)
-leave	вышел
 join as	зашел как
 now is	теперь
 Logged conferences:	Я веду логи в:

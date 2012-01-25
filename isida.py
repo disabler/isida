@@ -4,7 +4,7 @@
 # --------------------------------------------------------------------------- #
 #                                                                             #
 #    iSida Jabber Bot                                                         #
-#    Copyright (C) 2011 diSabler <dsy@dsy.name>                               #
+#    Copyright (C) 2012 diSabler <dsy@dsy.name>                               #
 #                                                                             #
 #    This program is free software: you can redistribute it and/or modify     #
 #    it under the terms of the GNU General Public License as published by     #
@@ -25,7 +25,7 @@ import os, sys, time, re
 pid_file = 'isida.pid'
 updatelog_file = 'update.log'
 ver_file = 'settings/version'
-id_append = '-rc2'
+id_append = '-stable'
 svn_ver_format = '%sS%s'
 git_ver_format = '%sG%s'
 time_ver_format = '%sT%s'

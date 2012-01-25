@@ -254,7 +254,6 @@ Total: %s	Усього: %s
 "%s" not found	"%s" не знайдено
 Not found.	Не знайдено.
 Total: %s%s	Усього: %s%s
-I can't do it	Не виходить...
 This command in use somewhere else. Please try later.	Ця команда використовується в іншому місці. Будь ласка, спробуйте пізніше.
 Please wait. Result you will be receive in private message approximately %s %s	Чекайте, результат ви отримаєте в приват приблизно через %s %s
 sec.	сек.
@@ -593,6 +592,7 @@ Name	Ім'я
 About	Про себе
 URL	Посилання
 Uptime: %s	Аптайм: %s
+I can't do it	Не виходить...
 Remote server not found	Віддалений сервер не знайдено
 Ping from you %s sec.	Пінг від тебе - %s сек.
 Ping from %s %s sec.	Пінг від %s - %s сек.
@@ -687,6 +687,7 @@ Show user's nick changes.	Показ зміни ніків.
 Last track %s: %s - %s %s	Остання доріжка %s: %s – %s %s
 Unavailable!	Недоступно!
 Last tracks %s:	Останні доріжки %s:
+Friends %s:	Друзі %s:
 Loved tracks %s:	Улюблені треки %s:
 Neighbours %s:	Сусіди %s:
 Playlists %s:	Плейлисти %s:
@@ -713,7 +714,6 @@ Music tastes	Музична сумісність
 
 # file: ../trunk/plugins/logger.py
 Users: %s (%s)	Користувачі: %s (%s)
-leave	вийшов
 join as	зайшов як
 now is	тепер
 Logged conferences:	Я веду логи в:
