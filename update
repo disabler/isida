@@ -1,9 +1,0 @@
-#!/bin/sh
-
-# updater for 2.1 to 2.2
-
-svn up
-
-python update2_1to2_2.py
-
-

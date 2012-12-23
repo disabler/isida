@@ -1,1 +1,0 @@
-backups of conferences are stored here.

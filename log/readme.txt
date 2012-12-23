@@ -1,1 +1,0 @@
-all system logs are stored here.
